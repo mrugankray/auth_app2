@@ -232,6 +232,7 @@ var AboutMeComponent = /** @class */ (function () {
     };
     AboutMeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-about-me',
             template: __webpack_require__("./src/app/component/about-me/about-me.component.html"),
             styles: [__webpack_require__("./src/app/component/about-me/about-me.component.css")]
@@ -282,6 +283,7 @@ var DashboardComponent = /** @class */ (function () {
     };
     DashboardComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-dashboard',
             template: __webpack_require__("./src/app/component/dashboard/dashboard.component.html"),
             styles: [__webpack_require__("./src/app/component/dashboard/dashboard.component.css")]
@@ -305,7 +307,7 @@ module.exports = ".jumbotron_header{\n  color: black;\n}\n"
 /***/ "./src/app/component/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "  <section class=\"container text-center\">\n    <div class=\"jumbotron \">\n      <h1 class='jumbotron_header'>Purrfect Match</h1>\n      <p class=\"text-muted\">The Only Human-Dawg Dating App</p>\n      <p>\n        <a [routerLink]=\"['/register']\" class=\"btn btn-primary my-2\">Sign Up</a>\n        <a [routerLink]=\"['/login']\"  class=\"btn btn-secondary my-2\">Login</a>\n      </p>\n    </div>\n  </section>\n\n  <div class=\"album py-5 bg-light\">\n    <div class=\"container\">\n\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src='' alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\"  alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\"  alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n<footer class=\"text-muted\">\n  <div class=\"container\">\n    <p class=\"float-right\">\n      <a href=\"#\">Back to top</a>\n    </p>\n    <p>Purrfect Match . Copyright &copy; 2018</p>\n  </div>\n</footer>\n"
+module.exports = "  <section class=\"container text-center\">\n    <div class=\"jumbotron \">\n      <h1 class='jumbotron_header'>Purrfect Match</h1>\n      <p class=\"text-muted\">The Only Human-Dawg Dating App</p>\n      <p *ngIf='!authservice.loggedIn()'>\n        <a [routerLink]=\"['/register']\" class=\"btn btn-primary my-2\">Sign Up</a>\n        <a [routerLink]=\"['/login']\"  class=\"btn btn-secondary my-2\">Login</a>\n      </p>\n    </div>\n  </section>\n\n  <div class=\"album py-5 bg-light\">\n    <div class=\"container\">\n\n      <div class=\"row\">\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src='./../../../assets/images/1.jpg' alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src='./../../../assets/images/sunshine_with_boxer.jpg' alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n        <div class=\"col-md-4\">\n          <div class=\"card mb-4 box-shadow\">\n            <img class=\"card-img-top\" src='./../../../assets/images/christal-yuen-59088-unsplash.jpg' alt=\"Card image cap\">\n            <div class=\"card-body\">\n              <p class=\"card-text\">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>\n              <div class=\"d-flex justify-content-between align-items-center\">\n                <div class=\"btn-group\">\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">View</button>\n                  <button type=\"button\" class=\"btn btn-sm btn-outline-secondary\">Edit</button>\n                </div>\n                <small class=\"text-muted\">9 mins</small>\n              </div>\n            </div>\n          </div>\n        </div>\n\n      </div>\n    </div>\n  </div>\n\n<footer class=\"text-muted\">\n  <div class=\"container\">\n    <p class=\"float-right\">\n      <a href=\"#\">Back to top</a>\n    </p>\n    <p>Purrfect Match . Copyright &copy; 2018</p>\n  </div>\n</footer>\n"
 
 /***/ }),
 
@@ -315,6 +317,7 @@ module.exports = "  <section class=\"container text-center\">\n    <div class=\"
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__service_auth_service__ = __webpack_require__("./src/app/service/auth.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -325,18 +328,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var HomeComponent = /** @class */ (function () {
-    function HomeComponent() {
+    function HomeComponent(authservice) {
+        this.authservice = authservice;
     }
     HomeComponent.prototype.ngOnInit = function () {
     };
     HomeComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-home',
             template: __webpack_require__("./src/app/component/home/home.component.html"),
             styles: [__webpack_require__("./src/app/component/home/home.component.css")]
         }),
-        __metadata("design:paramtypes", [])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__service_auth_service__["a" /* AuthService */]])
     ], HomeComponent);
     return HomeComponent;
 }());
@@ -411,6 +417,7 @@ var LoginComponent = /** @class */ (function () {
     };
     LoginComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-login',
             template: __webpack_require__("./src/app/component/login/login.component.html"),
             styles: [__webpack_require__("./src/app/component/login/login.component.css")]
@@ -479,6 +486,7 @@ var NavbarComponent = /** @class */ (function () {
     };
     NavbarComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-navbar',
             template: __webpack_require__("./src/app/component/navbar/navbar.component.html"),
             styles: [__webpack_require__("./src/app/component/navbar/navbar.component.css")]
@@ -504,7 +512,7 @@ module.exports = ""
 /***/ "./src/app/component/profile/profile.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf='user'>\n  <h2 class='page-header'>Name: {{user.name}}</h2>\n  <ul>\n    <li class='list-group-item'>Username: {{user.username}}</li>\n    <li class='list-group-item'>Email: {{user.email}}</li>\n  </ul>\n</div>\n"
+module.exports = "<div *ngIf='user'>\n  <div>\n    <h2 class='page-header'>Name: {{user.name}}</h2>\n    <ul>\n      <li class='list-group-item'>Username: {{user.username}}</li>\n      <li class='list-group-item'>Email: {{user.email}}</li>\n    </ul>\n    <ul *ngIf='!user'>Loading please wait.....</ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -548,6 +556,7 @@ var ProfileComponent = /** @class */ (function () {
     };
     ProfileComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-profile',
             template: __webpack_require__("./src/app/component/profile/profile.component.html"),
             styles: [__webpack_require__("./src/app/component/profile/profile.component.css")]
@@ -644,6 +653,7 @@ var RegisterComponent = /** @class */ (function () {
     };
     RegisterComponent = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+            moduleId: module.i,
             selector: 'app-register',
             template: __webpack_require__("./src/app/component/register/register.component.html"),
             styles: [__webpack_require__("./src/app/component/register/register.component.css")]

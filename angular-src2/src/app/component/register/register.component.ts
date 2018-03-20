@@ -7,6 +7,7 @@ import { Router } from '@angular/router';
 import { ValidateService } from './../../service/validate.service';
 
 @Component({
+  moduleId: module.id,
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
